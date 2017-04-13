@@ -21,6 +21,14 @@
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3"
+    "eslint-plugin-react": "^6.10.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-processhtml": "^1.1.0",
+    "gulp-uglify": "^2.1.2"
+  },
+  "dependencies": {
+    "gulp-csso": "^3.0.0"
   }
 }

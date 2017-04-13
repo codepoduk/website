@@ -5,3 +5,8 @@ h1 {
 body {
   background-color: grey;
 }
+
+.someDiv {
+  border-radius: 5px;
+  display: flex
+}
