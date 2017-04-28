@@ -24,11 +24,10 @@
     "eslint-plugin-react": "^6.10.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache-bust": "^1.1.0",
     "gulp-htmlmin": "^3.0.0",
     "gulp-processhtml": "^1.1.0",
-    "gulp-uglify": "^2.1.2"
-  },
-  "dependencies": {
+    "gulp-uglify": "^2.1.2",
     "gulp-csso": "^3.0.0"
   }
 }
