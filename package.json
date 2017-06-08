@@ -4,6 +4,7 @@
   "description": "The website repo for codepoduk",
   "main": "index.js",
   "scripts": {
+    "deploy": "surge src codepod.co.uk",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
