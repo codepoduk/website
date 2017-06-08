@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Code Pod | A community for developers</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+  <header class="header container">
+    <div class="inner">
+      <section class="logo">
+        <h1 class="logo__text">Code Pod</h1>
+      </section>
+      <div class="menu__hamburger-icon">
+        <div class="menu__hamburger-icon__block"></div>
+      </div>
+      <section class="menu">
+        <nav>
+          <ul class="menu__list">
+            <li class="menu__item who-we-are">
+              <a href="#who-we-are">Who We Are</a>
+            </li>
+            <li class="menu__item">
+              <a href="https://www.meetup.com/codepod/" target="_blank" rel="noopener noreferrer">Meetups</a>
+            </li>
+            <li class="menu__item message-us button">
+              <a href="#message-us">Message Us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social-icons"><!--insert icons here --></div>
+      </section>
+    </div>
+  </header>
+  <main class="main">
+    <section class="container section">
+      <div class="inner">
+        <div class="jumbo">
+          <h1 class="jumbo__text darkblue">We are a <span class="yellow">community</span> of <span class="red">developers</span> who work on projects, <span class="blue">share</span> knowledge and <span class="green">support</span> each other</h1>
+          <img class="jumbo__image" src="./assets/img/codepod-illustration.svg" alt="Codepod"/>
+      </div>
+    </section>
+    <section id="who-we-are" class="container section">
+      <div class="inner">
+        <div class="gradient-box__container">
+          <header class="gradient-box darkblue">WHO WE ARE</header>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <img class="column__image" src="./assets/img/sharing.svg" />
+            <div class="column__text">
+              <h2 class="column__headline darkblue">We are an open community of web developers, who have come together under the same banner.</h2>
+              <p class="column__copy darkblue">Our values are all aligned along moral and professional lines. Anyone can become a member of Code Pod.</p>
+              <p class="column__copy darkblue">Our community emerged from a desire to support each other and share resources and knowledge. Central to our foundations is a commitment to lifelong learning and self development.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column__image column__image--alt">
+              <img src="./assets/img/activities.svg" />
+            </div>
+            <div class="column__text">
+              <h2 class="column__headline darkblue">We code together regularly.</h2>
+              <p class="column__copy darkblue">Every Code Pod member is encouraged to activitly take part in the community; running meetups, creating resources for use, and bringing their projects into the group for advice or to find people to share the work with.</p>
+              <p class="column__copy darkblue">We also have a pool of varied, ongoing projects for developers at different levels; the projects are based around topics individuals want to learn more about.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column__image">
+              <img src="./assets/img/growing.svg" />
+            </div>
+            <div class="column__text">
+              <h2 class="column__headline darkblue">Our Goals</h2>
+              <p class="column__copy darkblue">To continue to grow as a community and expand our activities</p>
+              <p class="column__copy darkblue">To promote and facilitate the sharing of projects and knowledge</p>
+              <p class="column__copy darkblue">To facilitate varied community driven activities such as meetups, hackathons and remote hangouts on specialist topics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="message-us" class="container section">
+      <div class="inner">
+        <div class="gradient-box__container">
+          <header class="gradient-box">SAY HELLO</header>
+        </div>
+        <div class="flex-container">
+          <form id="contact-form">
+            <input id="submit-name" class="form-data name" type="text" name="senderName" value="" placeholder="Name">
+            <br>
+            <input type="email" class="form-data email" name="senderEmail" value="" placeholder="Email">
+            <br>
+            <textarea class="form-data message" name="message" rows="10" cols="50" placeholder="Message"></textarea>
+            <br>
+            <span id="submit-feedback"></span>
+            <button id="submit-button" class="float-right button bg-blue">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer container bg-darkblue">
+    <div class="inner">
+      <section class="logo">
+        <h1 class="logo__text">Code Pod</h1>
+      </section>
+      <section class="menu">
+        <nav>
+          <ul class="menu__list">
+            <li class="menu__item who-we-are">
+              <a href="#who-we-are">Who We Are</a>
+            </li>
+            <li class="menu__item">
+              <a href="https://www.meetup.com/codepod/" target="_blank" rel="noopener noreferrer">Meetups</a>
+            </li>
+            <li class="menu__item message-us">
+              <a href="#message-us">Message Us</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="social-icons">
+        <div class="icon icons--darkbg">
+          <a href="https://www.facebook.com/codepoduk/"><span><object type="image/svg+xml" data="./assets/img/facebook-darkbg.svg" class="icon icon--medium"></object></span></a>&nbsp;
+          <a href="https://github.com/codepoduk"><span><object type="image/svg+xml" data="./assets/img/github-darkbg.svg" class="icon icon--medium"></object></span></a>&nbsp;
+          <a href="https://gitter.im/codepoduk"><span><object type="image/svg+xml" data="./assets/img/gitter-darkbg.svg" class="icon icon--medium"></object></span></a>&nbsp;
+          <a href="https://www.meetup.com/codepod/"><span><object type="image/svg+xml" data="./assets/img/meetup-darkbg.svg" class="icon icon--medium"></object></span></a>&nbsp;
+          <a href="https://twitter.com/codepoduk"><span><object type="image/svg+xml" data="./assets/img/twitter-darkbg.svg" class="icon icon--medium"></object></span></a>
+        </div>
+      </section>
+      <div class="copyright">&copy; Code Pod 2017. All rights reserved.</div>
+    </div>
+  </footer>
+  <!-- Firebase scripts start here -->
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase: see https://github.com/kimmobrunfeldt/howto-everything/blob/master/firebase-as-backend.md for information re database set up.
+    // More info via https://console.firebase.google.com/project/code-pod-website/database/data.
+    var config = {
+      apiKey: "AIzaSyDUC0AEFQm3MPpmq0dBjmTCjpGJQ7O3b38",
+      authDomain: "code-pod-website.firebaseapp.com",
+      databaseURL: "https://code-pod-website.firebaseio.com",
+      projectId: "code-pod-website",
+      storageBucket: "code-pod-website.appspot.com",
+      messagingSenderId: "1001609419177"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <!-- Firebase scripts end here -->
+  <script src="js/md5.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
