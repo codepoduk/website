@@ -112,8 +112,8 @@ gulp.task('html', () => {
 
 gulp.task('build', ['fonts', 'icons', 'img', 'css', 'js', 'html']);
 
-gulp.task('default', ['browser-sync'], () => {
+gulp.task('default', ['build', 'browser-sync'], () => {
   gulp.watch('src/sass/**/*.scss', ['css']);
   gulp.watch('src/js/**/*.js', ['js']);
-  gulp.watch('*.html', ['bs-reload']);
+  gulp.watch('src/**/*.html', ['html', 'bs-reload']);
 });
