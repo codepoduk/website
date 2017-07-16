@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <title>Code Pod | A community for developers</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/icons/favicon.ico">
   <meta name="author" content="name">
   <meta name="description" content="description here">
   <meta name="keywords" content="keywords,here">
-  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/stylesheet.min.css">
 </head>
 
 <body>
@@ -143,23 +143,6 @@
       <div class="copyright">&copy; Code Pod 2017. All rights reserved.</div>
     </div>
   </footer>
-  <!-- Firebase scripts start here -->
-  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-  <script>
-    // Initialize Firebase: see https://github.com/kimmobrunfeldt/howto-everything/blob/master/firebase-as-backend.md for information re database set up.
-    // More info via https://console.firebase.google.com/project/code-pod-website/database/data.
-    var config = {
-      apiKey: "AIzaSyDUC0AEFQm3MPpmq0dBjmTCjpGJQ7O3b38",
-      authDomain: "code-pod-website.firebaseapp.com",
-      databaseURL: "https://code-pod-website.firebaseio.com",
-      projectId: "code-pod-website",
-      storageBucket: "code-pod-website.appspot.com",
-      messagingSenderId: "1001609419177"
-    };
-    firebase.initializeApp(config);
-  </script>
-  <!-- Firebase scripts end here -->
-  <script src="js/md5.min.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/bundle.min.js"></script>
 </body>
 </html>
