@@ -57,7 +57,7 @@ gulp.task('css', () => {
     .pipe(sass())
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(cleancss({debug: true}))
+    .pipe(cleancss({ debug: true }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/css/'))
     .pipe(browserSync.reload({ stream: true }));
@@ -106,7 +106,7 @@ gulp.task('html', () => {
     .pipe(cachebust({
         type: 'timestamp'
     }))
-    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('dist'));
 })
 
