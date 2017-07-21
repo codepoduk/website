@@ -1,3 +1,17 @@
+import firebase from 'firebase/app'
+import database from 'firebase/database';
+import md5 from 'md5';
+
+const config = {
+  apiKey: "AIzaSyDUC0AEFQm3MPpmq0dBjmTCjpGJQ7O3b38",
+  authDomain: "code-pod-website.firebaseapp.com",
+  databaseURL: "https://code-pod-website.firebaseio.com",
+  projectId: "code-pod-website",
+  storageBucket: "code-pod-website.appspot.com",
+  messagingSenderId: "1001609419177"
+};
+firebase.initializeApp(config);
+
 const CodePod = {
   toggleMenu() {
     this.menu.classList.toggle('open');
@@ -5,7 +19,7 @@ const CodePod = {
   },
   validateInput(input) {
     if ([...input.classList].includes('email')) {
-      const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       if (emailRegex.test(input.value)) {
         input.classList.remove('invalid');
         input.classList.add('valid');
@@ -29,14 +43,14 @@ const CodePod = {
     const isValid = [...this.contactForm.children]
       .filter(el => [...el.classList].includes('form-data'))
       .map(el => this.validateInput(el));
-    return isValid.every((valid) => valid);
+    return isValid.every(valid => valid);
   },
   saveDataSuccess() {
     this.contactForm.children['submit-button'].innerHTML = 'Submit';
     this.contactForm.children['submit-feedback'].innerHTML = '<strong class="green">Message sent!</strong>';
     [...this.contactForm.children]
       .filter(el => [...el.classList].includes('form-data'))
-      .forEach(el => {
+      .forEach((el) => {
         el.classList.toggle('sending');
         el.classList.remove('valid');
         el.classList.remove('invalid');
@@ -56,7 +70,7 @@ const CodePod = {
     [...this.contactForm.children]
       .filter(el => [...el.classList].includes('form-data'))
       .forEach(el => el.classList.toggle('sending'));
-    firebase.database().ref('messages').set(data)
+    database().ref('messages').set(data)
       .then(() => this.saveDataSuccess())
       .catch(() => this.saveDataFailure());
   },
